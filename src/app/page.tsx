@@ -59,6 +59,7 @@ export default function Page() {
           <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
             <a className="hover:text-white" href="#features">賣點</a>
             <a className="hover:text-white" href="#compare">對照</a>
+            <Link className="hover:text-white" href="/use">使用示例</Link>
             <a className="hover:text-white" href="#pricing">定價</a>
             <a className="hover:text-white" href="#faq">FAQ</a>
           </nav>
