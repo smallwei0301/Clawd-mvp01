@@ -5,14 +5,14 @@ const pricing = [
     name: "Starter",
     price: "NT$1,590",
     hint: "/月",
-    bullets: ["3,000 張/月", "一次性下載連結 + 短 TTL", "完成即刪（僅留 metadata）", "Email 支援"],
+    bullets: ["3,000 張/月", "一次性下載連結（有效 2 小時）", "處理完成即刪檔（不留存）", "Email/表單支援"],
     cta: "加入候補名單",
   },
   {
     name: "Pro",
     price: "NT$2,190",
     hint: "/月",
-    bullets: ["8,000 張/月", "批次上傳 + ZIP 交付", "重跑 buffer（5%）", "優先處理"],
+    bullets: ["8,000 張/月", "批次上傳 + ZIP 交付", "重跑規則透明（避免爭議）", "優先處理"],
     cta: "預約 Demo",
   },
   {
@@ -27,7 +27,7 @@ const pricing = [
 const faqs = [
   {
     q: "你們會保存我的商品圖片嗎？",
-    a: "不會。圖片僅在處理期間短暫暫存，完成後立即刪除；系統只保留作業狀態、耗時、點數扣款等 metadata。",
+    a: "不會。圖片僅在處理期間短暫暫存，完成後立即刪除。",
   },
   {
     q: "下載連結會不會外流？",
@@ -76,7 +76,7 @@ export default function Page() {
           <div className="px-8 md:px-14">
             <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs text-slate-300">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              MVP 上線中：上傳 → Queue → 去背 → 套模板 → ZIP 下載（完成即刪）
+              MVP 上線中：批量去背 → 白底/模板 → 尺寸規格化 → ZIP 下載
             </div>
 
             <h1 className="mt-6 text-4xl font-semibold tracking-tight md:text-6xl">
@@ -87,7 +87,7 @@ export default function Page() {
             </h1>
             <p className="mt-5 max-w-2xl text-lg text-slate-300">
               專為商品上架流程設計：去背、白底、裁切成平台規格，打包 ZIP 一次下載。
-              <span className="text-slate-200">雲端不留存</span>（完成即刪，只留 metadata），可監控、可限流、可重跑。
+              <span className="text-slate-200">雲端不留存</span>（處理完成即刪除檔案），並提供限時下載連結。
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -108,15 +108,15 @@ export default function Page() {
             <div className="mt-10 grid gap-4 text-sm text-slate-300 md:grid-cols-3">
               <div className="rounded-2xl border border-slate-800 bg-slate-950/40 p-5">
                 <div className="font-medium text-slate-100">不留存（完成即刪）</div>
-                <div className="mt-1">短 TTL 暫存 + 一次性下載連結，支援刪除證明與稽核欄位。</div>
+                <div className="mt-1">處理完成即刪除檔案；提供一次性下載連結（有效 2 小時）。</div>
               </div>
               <div className="rounded-2xl border border-slate-800 bg-slate-950/40 p-5">
                 <div className="font-medium text-slate-100">批次 ZIP 交付</div>
                 <div className="mt-1">上傳 100 張 → 自動處理 → 打包 ZIP，省去逐張下載。</div>
               </div>
               <div className="rounded-2xl border border-slate-800 bg-slate-950/40 p-5">
-                <div className="font-medium text-slate-100">可監控、可限流</div>
-                <div className="mt-1">隊列深度、失敗率、P95 耗時，告警與降級策略一開始就有。</div>
+                <div className="font-medium text-slate-100">交付可控、流程省工</div>
+                <div className="mt-1">批量處理＋ZIP 打包，減少人工整理與重工。</div>
               </div>
             </div>
           </div>
@@ -131,16 +131,16 @@ export default function Page() {
               desc="支援常見平台規格（1:1、4:5、長邊 2000px…），輸出一致、可重現。"
             />
             <Feature
-              title="Queue 化處理，尖峰不爆"
-              desc="上傳後進隊列，worker 自動擴縮；用戶端有進度與預估完成時間。"
+              title="批量處理：快出圖、少重工"
+              desc="一次處理整批圖片，避免逐張操作與反覆下載整理。"
             />
             <Feature
               title="一次性下載連結（2 小時 TTL）"
               desc="避免外流：token 用過即作廢；zip 下載後立即刪除，Lifecycle 兜底。"
             />
             <Feature
-              title="點數/扣點與重跑策略"
-              desc="系統錯誤重試不扣點；用戶主動重跑才扣點，並提供少量重跑 buffer。"
+              title="重跑規則清楚（避免爭議）"
+              desc="系統失敗不扣點；更改模板/尺寸等參數重跑才會扣點。"
             />
           </div>
         </section>
@@ -225,7 +225,7 @@ export default function Page() {
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 className="rounded-xl bg-white px-6 py-3 text-center font-medium text-slate-900 hover:bg-slate-100"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfbshFSZY4Ioeo8ewNesrTOaTaPn4wDeEYJGysSg8b_T4fU9g/viewform?usp=publish-editor"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdG1hjniZ0OuLbe3amraP3Tp-b5eeDzR5-5edoNW3iuZlEV-w/viewform?usp=publish-editor"
                 target="_blank"
                 rel="noreferrer"
               >
