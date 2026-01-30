@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "下載連結會不會外流？",
-    a: "預設採一次性下載 token + 短 TTL（建議 10 分鐘）。即使轉發，連結也只能用一次，過期後自動失效。",
+    a: "預設採一次性下載 token + TTL（2 小時）。即使轉發，連結也只能用一次，過期後自動失效。",
   },
   {
     q: "失敗或重跑怎麼算？",
@@ -135,7 +135,7 @@ export default function Page() {
               desc="上傳後進隊列，worker 自動擴縮；用戶端有進度與預估完成時間。"
             />
             <Feature
-              title="一次性下載連結（10 分鐘 TTL）"
+              title="一次性下載連結（2 小時 TTL）"
               desc="避免外流：token 用過即作廢；zip 下載後立即刪除，Lifecycle 兜底。"
             />
             <Feature
@@ -225,9 +225,11 @@ export default function Page() {
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
                 className="rounded-xl bg-white px-6 py-3 text-center font-medium text-slate-900 hover:bg-slate-100"
-                href="mailto:hello@your-domain.com?subject=%E5%95%86%E5%93%81%E5%9C%96%E5%8E%BB%E8%83%8C%20MVP%20%E8%A9%A6%E7%94%A8%E7%94%B3%E8%AB%8B&body=%E5%97%A8%20%E6%88%91%E6%83%B3%E7%94%B3%E8%AB%8B%E8%A9%A6%E7%94%A8%EF%BC%8C%E8%AB%8B%E5%B0%87%E6%88%91%E5%8A%A0%E5%85%A5%E5%80%99%E8%A3%9C%E5%90%8D%E5%96%AE%E3%80%82%0A%0A%E5%85%AC%E5%8F%B8%2F%E5%93%81%E7%89%8C%EF%BC%9A%0A%E6%9C%88%E9%A0%90%E4%BC%B0%E5%BC%B5%E6%95%B8%EF%BC%9A%0A%E5%B8%B8%E7%94%A8%E5%B9%B3%E5%8F%B0%EF%BC%9A%0A%E6%9C%80%E5%9C%A8%E6%84%8F%E5%8A%9F%E8%83%BD%EF%BC%9A"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfbshFSZY4Ioeo8ewNesrTOaTaPn4wDeEYJGysSg8b_T4fU9g/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noreferrer"
               >
-                用 Email 申請
+                填表申請試用
               </a>
               <Link
                 className="rounded-xl border border-slate-700 bg-slate-900/40 px-6 py-3 text-center font-medium text-white hover:bg-slate-900"
