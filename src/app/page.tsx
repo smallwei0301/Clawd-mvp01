@@ -219,7 +219,7 @@ export default function Page() {
           <div className="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/70 to-slate-950 p-10 md:p-14">
             <h2 className="text-2xl font-semibold md:text-3xl">想要搶先試用？</h2>
             <p className="mt-2 max-w-2xl text-slate-300">
-              留下 Email，我們會在 MVP 開放名單中優先通知你（含試用額度與上線時間）。
+              填寫表單，我們會在 MVP 開放名單中優先通知你（含試用額度與上線時間）。
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -240,7 +240,7 @@ export default function Page() {
             </div>
 
             <p className="mt-4 text-xs text-slate-400">
-              你也可以改成 Google Form：把按鈕連結換成你的表單網址即可。
+              申請後我們會回覆你：試跑方式、交付格式與試用額度。
             </p>
           </div>
         </section>
