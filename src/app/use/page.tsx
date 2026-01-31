@@ -9,14 +9,14 @@ const examples = [
   },
   {
     title: "2) 去背 PNG（透明背景）",
-    desc: "輸出：商品被乾淨分離，可用於各種底色/版型。",
+    desc: "輸出：商品被乾淨分離（含陰影的透明效果），可用於各種底色/版型。",
     img: "/examples/output_cutout.png",
     badge: "OUTPUT",
   },
   {
-    title: "3) 白底商品照（置中）",
-    desc: "輸出：純白背景、置中、柔和陰影，可直接上架。",
-    img: "/examples/output_white_bg.jpg",
+    title: "3) 白底 + 1:1 規格（方圖）",
+    desc: "輸出：自動置中、白底、比例一致，適合多數平台主圖。",
+    img: "/examples/output_square_1x1.jpg",
     badge: "OUTPUT",
   },
   {
