@@ -14,9 +14,9 @@ const examples = [
     badge: "OUTPUT",
   },
   {
-    title: "3) 白底 + 1:1 規格（方圖）",
-    desc: "輸出：自動置中、白底、比例一致，適合多數平台主圖。",
-    img: "/examples/output_square_1x1.jpg",
+    title: "3) 白底商品照（置中）",
+    desc: "輸出：純白背景、置中、柔和陰影，可直接上架。",
+    img: "/examples/output_white_bg.jpg",
     badge: "OUTPUT",
   },
   {
@@ -89,7 +89,7 @@ export default function UsePage() {
             </div>
 
             <div className="mt-6 text-xs text-slate-400">
-              * 目前示例圖為「示意資產」用於說明交付格式；正式版會以實際處理結果為準。
+              * 本頁示例圖目前為 Gemini 生成/裁切的示例資產，用於說明交付格式；正式版會以實際處理結果為準。
             </div>
           </div>
         </section>
