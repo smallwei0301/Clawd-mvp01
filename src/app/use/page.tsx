@@ -89,7 +89,7 @@ export default function UsePage() {
             </div>
 
             <div className="mt-6 text-xs text-slate-400">
-              * 本頁示例圖目前為 Gemini 生成/裁切的示例資產，用於說明交付格式；正式版會以實際處理結果為準。
+              * 本頁示例圖為 Gemini 生成圖（以「複製圖片/下載原圖」方式取得），用於說明交付格式；正式版會以實際處理結果為準。
             </div>
           </div>
         </section>
