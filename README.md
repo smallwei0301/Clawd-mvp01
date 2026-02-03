@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Clawd MVP Project
 
-## Getting Started
+## 🚀 專案願景 (Vision)
+這是一個基於 **Clawdbot** 生態系的啟動專案，旨在展示如何利用 Agent 協作來快速構建 MVP (Minimum Viable Product)。
 
-First, run the development server:
+## 🎯 核心目標 (Core Goals)
+1. **快速啟動**: 提供開箱即用的 Agent 環境設定。
+2. **自動化工作流**: 整合 Coding, Marketing, Operation 等多角色 Agent。
+3. **實驗場域**: 作為 `JustDemo` 平台的首個示範案例 (Showcase)。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 技術堆疊 (Tech Stack)
+- **Agent Framework**: Clawdbot
+- **LLM**: Gemini Pro / OpenAI Codex / Claude Sonnet
+- **Tools**: GitHub CLI, Node.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 開發計畫 (Roadmap)
+- [ ] 初始化環境與權限設定
+- [ ] 建立 Agent 角色 (CEO/CTO/PM)
+- [ ] 整合 GitHub Workflow
+- [ ] 部署至 `JustDemo` 平台進行驗證
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Powered by [Clawdbot](https://clawd.bot) & [JustDemo](https://github.com/smallwei0301/justdemo)*
